@@ -1,6 +1,6 @@
 # Jupyter Notebook R Stack
 
-> **Images hosted on Docker Hub are no longer updated. Please, use [quay.io image](https://quay.io/repository/jupyter/r-notebook)**
+> **Images hosted on Docker Hub are no longer updated. Please, use [ghcr.io image](https://ghcr.io/repository/jupyter/r-notebook)**
 
 [![docker pulls](https://img.shields.io/docker/pulls/jupyter/r-notebook.svg)](https://hub.docker.com/r/jupyter/r-notebook/)
 [![docker stars](https://img.shields.io/docker/stars/jupyter/r-notebook.svg)](https://hub.docker.com/r/jupyter/r-notebook/)

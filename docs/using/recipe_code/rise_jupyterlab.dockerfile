@@ -1,4 +1,4 @@
-FROM quay.io/jupyter/base-notebook
+FROM ghcr.io/data-beam/base-notebook
 
 RUN mamba install --yes 'jupyterlab_rise' && \
     mamba clean --all -f -y && \

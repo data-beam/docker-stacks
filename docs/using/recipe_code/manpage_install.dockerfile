@@ -1,4 +1,4 @@
-FROM quay.io/jupyter/base-notebook
+FROM ghcr.io/data-beam/base-notebook
 
 # Fix: https://github.com/hadolint/hadolint/wiki/DL4006
 # Fix: https://github.com/koalaman/shellcheck/wiki/SC3014

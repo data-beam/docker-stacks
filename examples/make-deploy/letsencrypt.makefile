@@ -21,7 +21,7 @@ letsencrypt:
 	@docker run -it -p 80:80 \
 		--name=$(TMP_CONTAINER) \
 		-v $(SECRETS_VOLUME):/etc/letsencrypt \
-		quay.io/letsencrypt/letsencrypt:latest \
+		ghcr.io/letsencrypt/letsencrypt:latest \
 		certonly \
 		$(CERT_SERVER) \
 		--keep-until-expiring \

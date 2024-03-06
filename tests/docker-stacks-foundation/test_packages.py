@@ -26,8 +26,8 @@ Example:
     # [...]
     # tests/docker-stacks-foundation/test_packages.py::test_python_packages
     # -------------------------------- live log setup --------------------------------
-    # 2024-01-21 17:46:43 [    INFO] Starting container quay.io/jupyter/docker-stacks-foundation ... (package_helper.py:55)
-    # 2024-01-21 17:46:43 [    INFO] Running quay.io/jupyter/docker-stacks-foundation with args {'detach': True, 'tty': True, 'command': ['bash', '-c', 'sleep infinity']} ... (conftest.py:99)
+    # 2024-01-21 17:46:43 [    INFO] Starting container ghcr.io/data-beam/docker-stacks-foundation ... (package_helper.py:55)
+    # 2024-01-21 17:46:43 [    INFO] Running ghcr.io/data-beam/docker-stacks-foundation with args {'detach': True, 'tty': True, 'command': ['bash', '-c', 'sleep infinity']} ... (conftest.py:99)
     # 2024-01-21 17:46:44 [    INFO] Grabbing the list of manually requested packages ... (package_helper.py:83)
     # -------------------------------- live log call ---------------------------------
     # 2024-01-21 17:46:44 [    INFO] Testing the import of packages ... (test_packages.py:151)

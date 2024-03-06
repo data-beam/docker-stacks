@@ -62,7 +62,7 @@ When there's a new stack definition, check before merging the PR:
 
 ## Adding a New Registry Owner Account
 
-1. Visit <https://quay.io/organization/jupyter/teams/owners>
+1. Visit <https://ghcr.io/organization/jupyter/teams/owners>
 2. Add the maintainer's username.
 
 ## Restarting a failed build

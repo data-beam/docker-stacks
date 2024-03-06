@@ -1,6 +1,6 @@
 # Jupyter Notebook Deep Learning Stack
 
-> **Images hosted on Docker Hub are no longer updated. Please, use [quay.io image](https://quay.io/repository/jupyter/tensorflow-notebook)**
+> **Images hosted on Docker Hub are no longer updated. Please, use [ghcr.io image](https://ghcr.io/repository/jupyter/tensorflow-notebook)**
 
 [![docker pulls](https://img.shields.io/docker/pulls/jupyter/tensorflow-notebook.svg)](https://hub.docker.com/r/jupyter/tensorflow-notebook/)
 [![docker stars](https://img.shields.io/docker/stars/jupyter/tensorflow-notebook.svg)](https://hub.docker.com/r/jupyter/tensorflow-notebook/)

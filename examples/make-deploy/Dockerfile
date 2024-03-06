@@ -2,7 +2,7 @@
 # Distributed under the terms of the Modified BSD License.
 
 # Pick your favorite docker-stacks image
-FROM quay.io/jupyter/minimal-notebook
+FROM ghcr.io/data-beam/minimal-notebook
 
 USER root
 

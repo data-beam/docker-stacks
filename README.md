@@ -5,9 +5,9 @@
 [![Read the Docs badge](https://img.shields.io/readthedocs/jupyter-docker-stacks.svg)](https://jupyter-docker-stacks.readthedocs.io/en/latest/ "Documentation build status")
 [![pre-commit.ci status](https://results.pre-commit.ci/badge/github/jupyter/docker-stacks/main.svg)](https://results.pre-commit.ci/latest/github/jupyter/docker-stacks/main "pre-commit.ci build status")
 [![Discourse badge](https://img.shields.io/discourse/users.svg?color=%23f37626&server=https%3A%2F%2Fdiscourse.jupyter.org)](https://discourse.jupyter.org/ "Jupyter Discourse Forum")
-[![Binder badge](https://static.mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jupyter/docker-stacks/main?urlpath=lab/tree/README.ipynb "Launch a quay.io/jupyter/base-notebook container on mybinder.org")
+[![Binder badge](https://static.mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jupyter/docker-stacks/main?urlpath=lab/tree/README.ipynb "Launch a ghcr.io/data-beam/base-notebook container on mybinder.org")
 
-Jupyter Docker Stacks are a set of ready-to-run [Docker images](https://quay.io/organization/jupyter) containing Jupyter applications and interactive computing tools.
+Jupyter Docker Stacks are a set of ready-to-run [Docker images](https://ghcr.io/organization/jupyter) containing Jupyter applications and interactive computing tools.
 You can use a stack image to do any of the following (and more):
 
 - Start a personal Jupyter Server with the JupyterLab frontend (default)
@@ -17,24 +17,24 @@ You can use a stack image to do any of the following (and more):
 
 ## Quick Start
 
-You can [try a relatively recent build of the quay.io/jupyter/base-notebook image on mybinder.org](https://mybinder.org/v2/gh/jupyter/docker-stacks/main?urlpath=lab/tree/README.ipynb).
+You can [try a relatively recent build of the ghcr.io/data-beam/base-notebook image on mybinder.org](https://mybinder.org/v2/gh/jupyter/docker-stacks/main?urlpath=lab/tree/README.ipynb).
 Otherwise, the examples below may help you get started if you [have Docker installed](https://docs.docker.com/get-docker/),
 know [which Docker image](https://jupyter-docker-stacks.readthedocs.io/en/latest/using/selecting.html) you want to use, and want to launch a single Jupyter Application in a container.
 
 The [User Guide on ReadTheDocs](https://jupyter-docker-stacks.readthedocs.io/en/latest/) describes additional uses and features in detail.
 
 ```{note}
-Since `2023-10-20` our images are only pushed to `Quay.io` registry.
+Since `2023-10-20` our images are only pushed to `ghcr.io` registry.
 Older images are available on Docker Hub, but they will no longer be updated.
 ```
 
 ### Example 1
 
-This command pulls the `jupyter/scipy-notebook` image tagged `2024-02-24` from Quay.io if it is not already present on the local host.
+This command pulls the `jupyter/scipy-notebook` image tagged `2024-02-24` from ghcr.io if it is not already present on the local host.
 It then starts a container running a Jupyter Server with the JupyterLab frontend and exposes the container's internal port `8888` to port `10000` of the host machine:
 
 ```bash
-docker run -p 10000:8888 quay.io/jupyter/scipy-notebook:2024-02-24
+docker run -p 10000:8888 ghcr.io/data-beam/scipy-notebook:2024-02-24
 ```
 
 You can modify the port on which the container's port is exposed by [changing the value of the `-p` option](https://docs.docker.com/engine/reference/run/#exposed-ports) to `-p 8888:8888`.
@@ -49,11 +49,11 @@ The container remains intact for restart after the Server exits.
 
 ### Example 2
 
-This command pulls the `jupyter/datascience-notebook` image tagged `2024-02-24` from Quay.io if it is not already present on the local host.
+This command pulls the `jupyter/datascience-notebook` image tagged `2024-02-24` from ghcr.io if it is not already present on the local host.
 It then starts an _ephemeral_ container running a Jupyter Server with the JupyterLab frontend and exposes the server on host port 10000.
 
 ```bash
-docker run -it --rm -p 10000:8888 -v "${PWD}":/home/jovyan/work quay.io/jupyter/datascience-notebook:2024-02-24
+docker run -it --rm -p 10000:8888 -v "${PWD}":/home/jovyan/work ghcr.io/data-beam/datascience-notebook:2024-02-24
 ```
 
 The use of the `-v` flag in the command mounts the current working directory on the host (`${PWD}` in the example command) as `/home/jovyan/work` in the container.
@@ -87,7 +87,7 @@ more information is available in the [documentation](https://jupyter-docker-stac
 - [Issue Tracker on GitHub](https://github.com/jupyter/docker-stacks/issues)
 - [Jupyter Discourse Forum](https://discourse.jupyter.org/)
 - [Jupyter Website](https://jupyter.org)
-- [Images on Quay.io](https://quay.io/organization/jupyter)
+- [Images on ghcr.io](https://ghcr.io/organization/jupyter)
 
 ## Acknowledgments
 
@@ -98,7 +98,7 @@ more information is available in the [documentation](https://jupyter-docker-stac
 ## CPU Architectures
 
 - We publish containers for both `x86_64` and `aarch64` platforms
-- Single-platform images have either `aarch64-` or `x86_64-` tag prefixes, for example, `quay.io/jupyter/base-notebook:aarch64-python-3.11.6`
+- Single-platform images have either `aarch64-` or `x86_64-` tag prefixes, for example, `ghcr.io/data-beam/base-notebook:aarch64-python-3.11.6`
 - Starting from `2022-09-21`, we create multi-platform images (except `tensorflow-notebook`)
 - Starting from `2023-06-01`, we create a multi-platform `tensorflow-notebook` image as well
 - Starting from `2024-02-24`, we create CUDA enabled variant of `pytorch-notebook` image for `x86_64` platform

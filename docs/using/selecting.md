@@ -22,13 +22,13 @@ We provide CUDA accelerated version of `pytorch-notebook` image.
 Prepend a CUDA version prefix (like `cuda12-`) to the image tag to allow PyTorch operations to use compatible NVIDIA GPUs for accelerated computation.
 We only build images for 2 last major versions of CUDA.
 
-For example, you can use an image `quay.io/jupyter/pytorch-notebook:cuda12-python-3.11.8`
+For example, you can use an image `ghcr.io/data-beam/pytorch-notebook:cuda12-python-3.11.8`
 
 ### jupyter/docker-stacks-foundation
 
 [Source on GitHub](https://github.com/jupyter/docker-stacks/tree/main/images/docker-stacks-foundation) |
 [Dockerfile commit history](https://github.com/jupyter/docker-stacks/commits/main/images/docker-stacks-foundation/Dockerfile) |
-[Quay.io image tags](https://quay.io/repository/jupyter/docker-stacks-foundation?tab=tags)
+[ghcr.io image tags](https://ghcr.io/repository/jupyter/docker-stacks-foundation?tab=tags)
 
 `jupyter/docker-stacks-foundation` is a small image supporting a majority of [options common across all core stacks](common.md).
 It is the basis for all other stacks on which Jupyter-related applications can be built
@@ -53,7 +53,7 @@ It contains:
 
 [Source on GitHub](https://github.com/jupyter/docker-stacks/tree/main/images/base-notebook) |
 [Dockerfile commit history](https://github.com/jupyter/docker-stacks/commits/main/images/base-notebook/Dockerfile) |
-[Quay.io image tags](https://quay.io/repository/jupyter/base-notebook?tab=tags)
+[ghcr.io image tags](https://ghcr.io/repository/jupyter/base-notebook?tab=tags)
 
 `jupyter/base-notebook` adds base Jupyter Applications like JupyterLab, Jupyter Notebook, JupyterHub, and NBClassic
 and serves as the basis for all other stacks besides `jupyter/docker-stacks-foundation`.
@@ -78,7 +78,7 @@ The shim `.sh` files will be removed at some future date.
 
 [Source on GitHub](https://github.com/jupyter/docker-stacks/tree/main/images/minimal-notebook) |
 [Dockerfile commit history](https://github.com/jupyter/docker-stacks/commits/main/images/minimal-notebook/Dockerfile) |
-[Quay.io image tags](https://quay.io/repository/jupyter/minimal-notebook?tab=tags)
+[ghcr.io image tags](https://ghcr.io/repository/jupyter/minimal-notebook?tab=tags)
 
 `jupyter/minimal-notebook` adds command-line tools useful when working in Jupyter applications.
 
@@ -98,7 +98,7 @@ It contains:
 
 [Source on GitHub](https://github.com/jupyter/docker-stacks/tree/main/images/r-notebook) |
 [Dockerfile commit history](https://github.com/jupyter/docker-stacks/commits/main/images/r-notebook/Dockerfile) |
-[Quay.io image tags](https://quay.io/repository/jupyter/r-notebook?tab=tags)
+[ghcr.io image tags](https://ghcr.io/repository/jupyter/r-notebook?tab=tags)
 
 `jupyter/r-notebook` includes popular packages from the R ecosystem listed below:
 
@@ -129,7 +129,7 @@ It contains:
 
 [Source on GitHub](https://github.com/jupyter/docker-stacks/tree/main/images/julia-notebook) |
 [Dockerfile commit history](https://github.com/jupyter/docker-stacks/commits/main/images/julia-notebook/Dockerfile) |
-[Quay.io image tags](https://quay.io/repository/jupyter/julia-notebook?tab=tags)
+[ghcr.io image tags](https://ghcr.io/repository/jupyter/julia-notebook?tab=tags)
 
 `jupyter/julia-notebook` includes popular packages from the Julia ecosystem listed below:
 
@@ -143,7 +143,7 @@ It contains:
 
 [Source on GitHub](https://github.com/jupyter/docker-stacks/tree/main/images/scipy-notebook) |
 [Dockerfile commit history](https://github.com/jupyter/docker-stacks/commits/main/images/scipy-notebook/Dockerfile) |
-[Quay.io image tags](https://quay.io/repository/jupyter/scipy-notebook?tab=tags)
+[ghcr.io image tags](https://ghcr.io/repository/jupyter/scipy-notebook?tab=tags)
 
 `jupyter/scipy-notebook` includes popular packages from the scientific Python ecosystem.
 
@@ -187,7 +187,7 @@ It contains:
 
 [Source on GitHub](https://github.com/jupyter/docker-stacks/tree/main/images/tensorflow-notebook) |
 [Dockerfile commit history](https://github.com/jupyter/docker-stacks/commits/main/images/tensorflow-notebook/Dockerfile) |
-[Quay.io image tags](https://quay.io/repository/jupyter/tensorflow-notebook?tab=tags)
+[ghcr.io image tags](https://ghcr.io/repository/jupyter/tensorflow-notebook?tab=tags)
 
 `jupyter/tensorflow-notebook` includes popular Python deep learning libraries.
 
@@ -198,7 +198,7 @@ It contains:
 
 [Source on GitHub](https://github.com/jupyter/docker-stacks/tree/main/images/pytorch-notebook) |
 [Dockerfile commit history](https://github.com/jupyter/docker-stacks/commits/main/images/pytorch-notebook/Dockerfile) |
-[Quay.io image tags](https://quay.io/repository/jupyter/pytorch-notebook?tab=tags)
+[ghcr.io image tags](https://ghcr.io/repository/jupyter/pytorch-notebook?tab=tags)
 
 `jupyter/pytorch-notebook` includes popular Python deep learning libraries.
 
@@ -209,7 +209,7 @@ It contains:
 
 [Source on GitHub](https://github.com/jupyter/docker-stacks/tree/main/images/datascience-notebook) |
 [Dockerfile commit history](https://github.com/jupyter/docker-stacks/commits/main/images/datascience-notebook/Dockerfile) |
-[Quay.io image tags](https://quay.io/repository/jupyter/datascience-notebook?tab=tags)
+[ghcr.io image tags](https://ghcr.io/repository/jupyter/datascience-notebook?tab=tags)
 
 `jupyter/datascience-notebook` includes libraries for data analysis from the Python, R, and Julia communities.
 
@@ -221,7 +221,7 @@ It contains:
 
 [Source on GitHub](https://github.com/jupyter/docker-stacks/tree/main/images/pyspark-notebook) |
 [Dockerfile commit history](https://github.com/jupyter/docker-stacks/commits/main/images/pyspark-notebook/Dockerfile) |
-[Quay.io image tags](https://quay.io/repository/jupyter/pyspark-notebook?tab=tags)
+[ghcr.io image tags](https://ghcr.io/repository/jupyter/pyspark-notebook?tab=tags)
 
 `jupyter/pyspark-notebook` includes Python support for Apache Spark.
 
@@ -235,7 +235,7 @@ It contains:
 
 [Source on GitHub](https://github.com/jupyter/docker-stacks/tree/main/images/all-spark-notebook) |
 [Dockerfile commit history](https://github.com/jupyter/docker-stacks/commits/main/images/all-spark-notebook/Dockerfile) |
-[Quay.io image tags](https://quay.io/repository/jupyter/all-spark-notebook?tab=tags)
+[ghcr.io image tags](https://ghcr.io/repository/jupyter/all-spark-notebook?tab=tags)
 
 `jupyter/all-spark-notebook` includes Python and R support for Apache Spark.
 
@@ -256,7 +256,7 @@ diagram](../images/inherit.svg)](http://interactive.blockdiag.com/?compression=d
 
 ### Builds
 
-Every Monday and whenever a pull request is merged, images are rebuilt and pushed to [the public container registry](https://quay.io/organization/jupyter).
+Every Monday and whenever a pull request is merged, images are rebuilt and pushed to [the public container registry](https://ghcr.io/organization/jupyter).
 
 ### Versioning via image tags
 
@@ -271,7 +271,7 @@ Whenever a docker image is pushed to the container registry, it is tagged with:
 ```{warning}
 - Tags before `2022-07-05` were sometimes incorrect.
   Please, do not rely on them.
-- Single-platform images have either `aarch64-` or `x86_64-` tag prefixes, for example, `quay.io/jupyter/base-notebook:aarch64-python-3.11.6`
+- Single-platform images have either `aarch64-` or `x86_64-` tag prefixes, for example, `ghcr.io/data-beam/base-notebook:aarch64-python-3.11.6`
 ```
 
 For stability and reproducibility, you should either reference a date formatted

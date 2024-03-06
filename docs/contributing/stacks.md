@@ -8,7 +8,7 @@ Following these steps will:
 
 1. Set up a project on GitHub containing a Dockerfile based on any image we provide.
 2. Configure GitHub Actions to build and test your image when users submit pull requests to your repository.
-3. Configure Quay.io to host your images for others to use.
+3. Configure ghcr.io to host your images for others to use.
 4. Update the [list of community stacks](../using/selecting.md#community-stacks) in this documentation to include your image.
 
 This approach mirrors how we build and share the core stack images.
@@ -35,8 +35,8 @@ This will serve as both the git repository name and the part of the Docker image
 stack_name [my-jupyter-stack]:
 ```
 
-Enter the user or organization name under which this stack will reside on Quay.io.
-You must have access to manage this Quay.io organization to push images here.
+Enter the user or organization name under which this stack will reside on ghcr.io.
+You must have access to manage this ghcr.io organization to push images here.
 
 ```text
 stack_org [my-project]:
@@ -45,7 +45,7 @@ stack_org [my-project]:
 Select an image from the `jupyter/docker-stacks` project that will serve as the base for your new image.
 
 ```text
-stack_base_image [quay.io/jupyter/base-notebook]:
+stack_base_image [ghcr.io/data-beam/base-notebook]:
 ```
 
 Enter a longer description of the stack for your README.
@@ -90,7 +90,7 @@ git push -u origin main
 ## Configuring Docker Hub
 
 ```{note}
-Jupyter Docker Stacks are hosted on Quay.io, but in this example, we show you how to host your image on Docker Hub.
+Jupyter Docker Stacks are hosted on ghcr.io, but in this example, we show you how to host your image on Docker Hub.
 ```
 
 Now, configure Docker Hub to build your stack image and push it to the Docker Hub repository whenever

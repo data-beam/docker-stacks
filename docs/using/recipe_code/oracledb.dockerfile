@@ -1,4 +1,4 @@
-FROM quay.io/jupyter/base-notebook
+FROM ghcr.io/data-beam/base-notebook
 
 USER root
 

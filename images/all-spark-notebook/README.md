@@ -1,6 +1,6 @@
 # Jupyter Notebook Python, R, Spark Stack
 
-> **Images hosted on Docker Hub are no longer updated. Please, use [quay.io image](https://quay.io/repository/jupyter/all-spark-notebook)**
+> **Images hosted on Docker Hub are no longer updated. Please, use [ghcr.io image](https://ghcr.io/repository/jupyter/all-spark-notebook)**
 
 [![docker pulls](https://img.shields.io/docker/pulls/jupyter/all-spark-notebook.svg)](https://hub.docker.com/r/jupyter/all-spark-notebook/)
 [![docker stars](https://img.shields.io/docker/stars/jupyter/all-spark-notebook.svg)](https://hub.docker.com/r/jupyter/all-spark-notebook/)

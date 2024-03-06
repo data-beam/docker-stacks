@@ -3,7 +3,7 @@
 .PHONY: docs help test
 
 SHELL:=bash
-REGISTRY?=quay.io
+REGISTRY?=ghcr.io
 OWNER?=jupyter
 
 # Enable BuildKit for Docker build

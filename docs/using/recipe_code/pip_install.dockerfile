@@ -1,4 +1,4 @@
-FROM quay.io/jupyter/base-notebook
+FROM ghcr.io/data-beam/base-notebook
 
 # Install in the default python3 environment
 RUN pip install --no-cache-dir 'flake8' && \

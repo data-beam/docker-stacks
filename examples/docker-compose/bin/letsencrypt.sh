@@ -27,7 +27,7 @@ docker volume create --name "${SECRETS_VOLUME}" 1>/dev/null
 docker run -it --rm \
     -p 80:80 \
     -v "${SECRETS_VOLUME}":/etc/letsencrypt \
-    quay.io/letsencrypt/letsencrypt:latest \
+    ghcr.io/letsencrypt/letsencrypt:latest \
     certonly \
     --non-interactive \
     --keep-until-expiring \

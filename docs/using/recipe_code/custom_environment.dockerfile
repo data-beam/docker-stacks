@@ -1,4 +1,4 @@
-FROM quay.io/jupyter/minimal-notebook
+FROM ghcr.io/data-beam/minimal-notebook
 
 # Name your environment and choose the Python version
 ARG env_name=python310

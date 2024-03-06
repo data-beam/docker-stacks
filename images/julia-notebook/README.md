@@ -1,6 +1,6 @@
 # Jupyter Notebook Julia Stack
 
-> **Images hosted on Docker Hub are no longer updated. Please, use [quay.io image](https://quay.io/repository/jupyter/julia-notebook)**
+> **Images hosted on Docker Hub are no longer updated. Please, use [ghcr.io image](https://ghcr.io/repository/jupyter/julia-notebook)**
 
 [![docker pulls](https://img.shields.io/docker/pulls/jupyter/julia-notebook.svg)](https://hub.docker.com/r/jupyter/julia-notebook/)
 [![docker stars](https://img.shields.io/docker/stars/jupyter/julia-notebook.svg)](https://hub.docker.com/r/jupyter/julia-notebook/)

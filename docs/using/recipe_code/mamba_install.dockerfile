@@ -1,4 +1,4 @@
-FROM quay.io/jupyter/base-notebook
+FROM ghcr.io/data-beam/base-notebook
 
 RUN mamba install --yes 'flake8' && \
     mamba clean --all -f -y && \

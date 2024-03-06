@@ -1,4 +1,4 @@
-name: Move some images from Docker Hub to Quay.io
+name: Move some images from Docker Hub to ghcr.io
 
 env:
   OWNER: ${{ github.repository_owner }}
@@ -30,14 +30,14 @@ jobs:
           brew install skopeo
           brew install --cask docker
 
-      - name: Login to Quay.io 🔐
+      - name: Login to ghcr.io 🔐
         if: env.PUSH_TO_REGISTRY == 'true'
-        run: skopeo login quay.io --username ${{ secrets.QUAY_USERNAME }} --password ${{ secrets.QUAY_ROBOT_TOKEN }}
+        run: skopeo login ghcr.io --username ${{ secrets.QUAY_USERNAME }} --password ${{ secrets.QUAY_ROBOT_TOKEN }}
 
-      - name: Move image from Docker Hub to Quay.io 🐳
+      - name: Move image from Docker Hub to ghcr.io 🐳
         if: env.PUSH_TO_REGISTRY == 'true'
         run: |
-          skopeo copy --multi-arch all docker://${{ env.OWNER }}/${{ matrix.image }}:${{ matrix.tag }} docker://quay.io/${{ env.OWNER }}/${{ matrix.image }}:${{ matrix.tag }}
+          skopeo copy --multi-arch all docker://${{ env.OWNER }}/${{ matrix.image }}:${{ matrix.tag }} docker://ghcr.io/${{ env.OWNER }}/${{ matrix.image }}:${{ matrix.tag }}
 
     strategy:
       fail-fast: false
